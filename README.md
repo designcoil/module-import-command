@@ -2,7 +2,7 @@
 
 CLI commands that wrap Magento's native **ImportExport** pipeline - the exact same codepath used by **Admin > System > Data Transfer > Import**.
 
-No third-party libraries. No custom CSV parsing. Just a thin CLI layer on top of core Magento.
+Useful for large catalog imports without Admin timeouts. Importing 10k–100k+ products through the Admin UI often results in PHP max execution time exceeded, browser session expiration, Cloudflare timeouts. Running imports via CLI avoids web server limits and is suitable for large catalogs and scheduled batch jobs.
 
 ## Commands
 
