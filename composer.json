@@ -1,0 +1,28 @@
+{
+    "name": "designcoil/module-import-command",
+    "description": "CLI commands (product:import:validate, product:import:run) wrapping Magento's native ImportExport pipeline",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": [
+        "magento2",
+        "import",
+        "cli",
+        "csv",
+        "catalog",
+        "product-import"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "DesignCoil\\ImportCommand\\": ""
+        }
+    },
+    "require": {
+        "php": "~8.2.0||~8.3.0||~8.4.0",
+        "magento/framework": "*",
+        "magento/module-import-export": "*"
+    }
+}
