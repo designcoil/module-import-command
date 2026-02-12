@@ -1,6 +1,6 @@
-# DesignCoil ImportCommand for Magento 2
+# CLI Import for Magento 2
 
-CLI commands that wrap Magento's native **ImportExport** pipeline — the exact same codepath used by **Admin > System > Data Transfer > Import**.
+CLI commands that wrap Magento's native **ImportExport** pipeline - the exact same codepath used by **Admin > System > Data Transfer > Import**.
 
 No third-party libraries. No custom CSV parsing. Just a thin CLI layer on top of core Magento.
 
@@ -149,7 +149,7 @@ All options are available on both commands.
 
 ## How it works
 
-1. The CSV file is copied into `var/importexport/` — the same temp location Magento's admin upload uses.
+1. The CSV file is copied into `var/importexport/` - the same temp location Magento's admin upload uses.
 2. A native `Magento\ImportExport\Model\Import\Source\Csv` adapter is created.
 3. `Import::validateSource()` validates the data and saves it to the database in batches.
 4. `Import::importSource()` reads those batches and performs the actual create/update/delete operations.
